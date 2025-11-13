@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entreprise - STIBUS / Zacheo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/afc8e096c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Fond animé -->
+  <canvas id="bg-canvas"></canvas>
+
+    <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">Zachéo</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href=".\veilles.html">Veilles <i class=""></i></a>
+          </li>
+
+          <li><a href="certifications.html">Certifications</a></li>
+
+          <li class="dropdown">
+            <a href="#e5">EPREUVE E5 <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="formation.html">En Formation</a></li>
+              <li><a href="E5entreprise.html">En Entreprise</a></li>
+            </ul>
+          </li>
+
+          <li><a href="e6.html">EPREUVE E6</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="page-content">
+
+    <section class="fade-up entreprise-section">
+        <br>
+        <br>
+        <br>
+      <h1>Présentation de l’entreprise</h1>
+      <p>
+        <strong>STIBUS</strong> est la société de transport public de l’agglomération de Maubeuge - Val de Sambre.
+        Elle assure le transport urbain et périurbain de voyageurs sur plus de 40 communes.
+        Son objectif principal est de faciliter la mobilité des habitants tout en développant un service moderne,
+        écologique et accessible à tous.
+      </p>
+
+      <p>
+        L’entreprise compte plusieurs dizaines de bus, dessert un réseau couvrant l’ensemble du territoire
+        et met à disposition des outils numériques tels que l’application <strong>STIBUS Mobile</strong> pour le suivi des horaires en temps réel.
+      </p>
+    </section>
+
+    <section class="fade-up entreprise-section">
+      <h2>Le Service Informatique</h2>
+      <p>
+        Le service informatique de STIBUS joue un rôle essentiel dans la continuité et la sécurité des opérations.
+        Il gère à la fois le matériel, les logiciels, les réseaux et la téléphonie interne de l’entreprise.
+      </p>
+
+      <ul class="entreprise-list">
+        <li>Gestion du support utilisateur et assistance technique</li>
+        <li>Travaux en mode projet (amélioration et modernisation du SI)</li>
+        <li>Gestion du parc informatique (postes, imprimantes, serveurs)</li>
+        <li>Administration des réseaux et de la téléphonie</li>
+        <li>Sécurisation de l’infrastructure (sauvegardes, accès, antivirus)</li>
+      </ul>
+    </section>
+
+    <section class="fade-up entreprise-section">
+      <h2>Mon rôle chez STIBUS</h2>
+      <p>
+        Au sein du service informatique, je participe activement à la gestion du système d’information.
+        Je contribue à la maintenance du parc, à la mise en place de projets internes
+        et à la sécurité des infrastructures réseau et des données de l’entreprise.
+      </p>
+
+      <div class="entreprise-card-container">
+        <div class="entreprise-card">
+          <h3>💻 Support & maintenance</h3>
+          <p>Assistance technique auprès des utilisateurs et gestion des incidents informatiques quotidiens.</p>
+        </div>
+        <div class="entreprise-card">
+          <h3>📞 Gestion de la téléphonie</h3>
+          <p>Configuration, suivi et maintenance du système téléphonique d’entreprise.</p>
+        </div>
+        <div class="entreprise-card">
+          <h3>🔒 Sécurité & réseaux</h3>
+          <p>Supervision du réseau, gestion des accès et application des bonnes pratiques de cybersécurité.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zacheo – Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+<style>
+    /* PAGE ENTREPRISE */
+.entreprise-section {
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+
+.entreprise-section h1, .entreprise-section h2 {
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.entreprise-section p {
+  color: #ddd;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.entreprise-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.entreprise-list li {
+  background: rgba(255,255,255,0.05);
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.entreprise-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.entreprise-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 260px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entreprise-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(255,81,47,0.3);
+}
+
+.entreprise-card h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+</style>
+
+</body>
+</html>

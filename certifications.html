@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications - Zacheo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/afc8e096c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">Zachéo</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href=".\veilles.html">Veilles <i class=""></i></a>
+          </li>
+
+          <li><a href="certifications.html">Certifications</a></li>
+
+          <li class="dropdown">
+            <a href="#e5">EPREUVE E5 <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="formation.html">En Formation</a></li>
+              <li><a href="E5entreprise.html">En Entreprise</a></li>
+            </ul>
+          </li>
+
+          <li><a href="e6.html">EPREUVE E6</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Fond animé -->
+  <canvas id="bg-canvas"></canvas>
+
+  <main class="page-content">
+    <section class="fade-up">
+        <br>
+        <br>
+        <br>
+      <h1>Mes Certifications</h1>
+      <p class="intro">
+        Voici les certifications que j’ai obtenues au cours de mon parcours en BTS SIO.  
+        Ces validations attestent de mes compétences techniques en <strong>réseaux</strong> et en <strong>sécurité informatique</strong>.
+      </p>
+    </section>
+
+    <!-- Certifications Cisco -->
+    <section class="cert-section fade-up">
+      <h2>🏅 Cisco Networking Academy</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <img src="images/cisco1.png" alt="Cisco - Introduction to Cybersecurity">
+          <h3>Introduction to Cybersecurity</h3>
+          <p>Cisco Networking Academy</p>
+          <small>Attribué le 4 avril 2025</small>
+        </div>
+
+        <div class="cert-card">
+          <img src="images/cisco2.png" alt="Cisco - Networking Basics">
+          <h3>Networking Basics</h3>
+          <p>Cisco Networking Academy</p>
+          <small>Attribué le 12 novembre 2024</small>
+        </div>
+
+        <div class="cert-card">
+          <img src="images/cisco3.png" alt="Cisco - Networking Devices and Initial Configuration">
+          <h3>Networking Devices and Initial Configuration</h3>
+          <p>Cisco Networking Academy</p>
+          <small>Attribué le 27 janvier 2025</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications CNIL -->
+    <section class="cert-section fade-up">
+      <h2>🧠 CNIL - RGPD</h2>
+      <p>Attestations obtenues suite aux modules de formation sur la protection des données personnelles :</p>
+
+      <table class="cnil-table">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Cours</th>
+      <th>Attribué le</th>
+      <th>Code de contrôle</th>
+      <th>Fichier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Attestation du Module 5</td>
+      <td>MODULE 5 : Les collectivités territoriales</td>
+      <td>30 octobre 2024</td>
+      <td>dXEftAXt7c</td>
+      <td><a href="pdf/module5.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Voir</a></td>
+    </tr>
+    <tr>
+      <td>Attestation du Module 4</td>
+      <td>MODULE 4 : Le DPO et les outils de la conformité</td>
+      <td>23 octobre 2024</td>
+      <td>eZRbFFPW0H</td>
+      <td><a href="pdf/module4.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Voir</a></td>
+    </tr>
+    <tr>
+      <td>Attestation du Module 3</td>
+      <td>MODULE 3 : Les responsabilités des acteurs</td>
+      <td>23 octobre 2024</td>
+      <td>XJdEwHV0n3</td>
+      <td><a href="pdf/module3.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Voir</a></td>
+    </tr>
+    <tr>
+      <td>Attestation du Module 2</td>
+      <td>MODULE 2 : Les principes de protection des données</td>
+      <td>23 octobre 2024</td>
+      <td>sTRMQvj7Ch</td>
+      <td><a href="pdf/module2.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Voir</a></td>
+    </tr>
+    <tr>
+      <td>Attestation du Module 1</td>
+      <td>MODULE 1 : Le RGPD et ses notions clés</td>
+      <td>18 octobre 2024</td>
+      <td>DQdcirU4pn</td>
+      <td><a href="pdf/module1.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Voir</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="download-all">
+  <a href="pdf/" target="_blank" class="btn-download">
+    <i class="fas fa-download"></i> Télécharger toutes mes attestations
+  </a>
+</div>
+
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+  <style>
+    /* --- PAGE CERTIFICATIONS --- */
+
+.page-content section:first-child {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+}
+ 
+    
+.cert-section {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.cert-section h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.cert-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 280px;
+  padding: 1.5rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(255, 81, 47, 0.3);
+}
+
+.cert-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.cert-card h3 {
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.cert-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 0.3rem;
+}
+
+.cert-card small {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* TABLE CNIL */
+.cnil-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.cnil-table th, .cnil-table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.cnil-table th {
+  background: rgba(255,255,255,0.1);
+  color: var(--accent);
+}
+
+.cnil-table tr:nth-child(even) {
+  background: rgba(255,255,255,0.03);
+}
+
+.cnil-table tr:hover {
+  background: rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+/* Liens PDF CNIL */
+.pdf-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.pdf-link i {
+  margin-right: 6px;
+  color: #ff4444;
+}
+
+.pdf-link:hover {
+  color: var(--primary);
+}
+
+.download-all {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-download:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+
+  </style>
+
+</body>
+</html>

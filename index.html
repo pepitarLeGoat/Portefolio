@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio Zachéo</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/afc8e096c9.js" crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">Zachéo</div>
+
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href=".\veilles.html">Veilles <i class=""></i></a>
+          </li>
+
+          <li><a href="certifications.html">Certifications</a></li>
+
+          <li class="dropdown">
+            <a href="#e5">EPREUVE E5 <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="formation.html">En Formation</a></li>
+              <li><a href="E5entreprise.html">En Entreprise</a></li>
+            </ul>
+          </li>
+
+          <li><a href="e6.html">EPREUVE E6</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <h1 class="typing-text">Bienvenue sur mon portfolio !</h1>
+        <p class="subtitle">BTS SIO — OPTION SISR</p>
+        <p class="intro">Bonjour, je m'appelle Zachéo 👋</p>
+      </div>
+    </section>
+
+    <!-- BTS SIO & Options -->
+    <section id="bts-sio" class="cards-section">
+      <div class="container cards-container">
+        <article class="card fade-up" aria-labelledby="bts-title">
+          <div class="card-media">
+            <img src="SIO.png" alt="BTS SIO - illustration" />
+          </div>
+          <div class="card-body">
+            <h3 id="bts-title">BTS SIO</h3>
+            <p>Le BTS SIO (Services Informatiques aux Organisations) forme des techniciens en informatique et prépare aux métiers de développeur, administrateur réseau ou technicien informatique.</p>
+          </div>
+        </article>
+
+        <article class="card fade-up" aria-labelledby="sisr-title">
+          <div class="card-media">
+            <img src="SISR.png" alt="Option SISR - illustration" />
+          </div>
+          <div class="card-body">
+            <h3 id="sisr-title">Option SISR</h3>
+            <p>L’option SISR (Solutions d’Infrastructure, Systèmes et Réseaux) forme à la gestion, la sécurisation et la maintenance des réseaux et systèmes informatiques.</p>
+          </div>
+        </article>
+
+        <article class="card fade-up" aria-labelledby="slam-title">
+          <div class="card-media">
+            <img src="slam.png" alt="Option SLAM - illustration" />
+          </div>
+          <div class="card-body">
+            <h3 id="slam-title">Option SLAM</h3>
+            <p>L’option SLAM (Solutions Logicielles et Applications Métiers) est centrée sur la conception et le développement d’applications métiers et logiciels.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Presentation -->
+    <section id="presentation" class="fade-up">
+      <div class="container">
+        <h2>À propos de moi</h2>
+        <p>J’ai choisi de rejoindre un BTS SIO car je suis passionné par les nouvelles technologies et leur impact sur notre quotidien. Ce cursus correspond à mon projet professionnel : travailler dans le développement ou la gestion des systèmes et réseaux. La formation pratique me permet d’acquérir des compétences directement applicables en entreprise.</p>
+      </div>
+    </section>
+  </main>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Zachéo — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille Technologique - Zacheo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/afc8e096c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">Zachéo</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href=".\veilles.html">Veilles <i class=""></i></a>
+          </li>
+
+          <li><a href="certifications.html">Certifications</a></li>
+
+          <li class="dropdown">
+            <a href="#e5">EPREUVE E5 <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="formation.html">En Formation</a></li>
+              <li><a href="E5entreprise.html">En Entreprise</a></li>
+            </ul>
+          </li>
+
+          <li><a href="e6.html">EPREUVE E6</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- FOND ANIMÉ -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="page-content">
+    <section class="veille-header fade-up">
+      <h1>Veille Technologique</h1>
+      <h2>Cybersécurité — Zacheo</h2>
+      <p>
+        Ma veille technologique porte sur la cybersécurité, un domaine essentiel dans un monde où les données numériques sont au cœur de toutes les activités. 
+        L’objectif de cette veille est de suivre l’évolution des menaces, des outils de protection et des nouvelles normes liées à la sécurité informatique.
+      </p>
+    </section>
+
+    <section class="veille-container fade-up">
+      <article class="veille-card">
+        <h3>🧠 Qu’est-ce que la cybersécurité ?</h3>
+        <p>
+          La cybersécurité regroupe l’ensemble des technologies, processus et pratiques conçus pour protéger les systèmes informatiques contre les attaques numériques. 
+          Elle vise à assurer la confidentialité, l’intégrité et la disponibilité des données.
+        </p>
+      </article>
+
+      <article class="veille-card">
+        <h3>⚔️ Menaces actuelles</h3>
+        <ul>
+          <li>Phishing et ingénierie sociale</li>
+          <li>Ransomware (rançongiciels)</li>
+          <li>Fuites de données et espionnage</li>
+          <li>Vulnérabilités logicielles et failles 0-day</li>
+        </ul>
+      </article>
+
+      <article class="veille-card">
+        <h3>🧩 Outils et solutions modernes</h3>
+        <ul>
+          <li>Firewalls nouvelle génération (NGFW)</li>
+          <li>Antivirus basés sur l’IA</li>
+          <li>Analyse comportementale et détection proactive</li>
+          <li>Gestion des identités (IAM) et authentification multifactorielle</li>
+        </ul>
+      </article>
+
+      <article class="veille-card">
+        <h3>📡 Sources de veille</h3>
+        <p>
+          Pour rester à jour, je consulte régulièrement :
+        </p>
+        <ul>
+          <li><a href="https://www.cert.ssi.gouv.fr/" target="_blank">CERT-FR</a></li>
+          <li><a href="https://www.zataz.com/" target="_blank">ZATAZ - Actualité cybersécurité</a></li>
+          <li><a href="https://www.cybermalveillance.gouv.fr/" target="_blank">Cybermalveillance.gouv.fr</a></li>
+          <li><a href="https://www.kaspersky.fr/blog/" target="_blank">Blog Kaspersky</a></li>
+        </ul>
+      </article>
+
+      <article class="veille-card">
+        <h3>🚀 Conclusion</h3>
+        <p>
+          La cybersécurité est un domaine en constante évolution.  
+          En tant qu’étudiant en BTS SIO, suivre cette veille me permet d’anticiper les tendances, comprendre les menaces émergentes 
+          et renforcer mes compétences techniques pour devenir un professionnel capable de protéger efficacement les infrastructures.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+  <style>
+    /* ---- PAGE VEILLE ---- */
+.page-content {
+  padding: 8rem 2rem 4rem;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.veille-header {
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+
+.veille-header h1 {
+  font-size: 3rem;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.veille-header h2 {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.veille-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.veille-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.veille-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(255, 81, 47, 0.3);
+}
+
+.veille-card h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.veille-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.veille-card ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.veille-card ul li::before {
+  content: "•";
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+  </style>
+</body>
+</html>
+

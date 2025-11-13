@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences - Portfolio Kylian</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/afc8e096c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">Zachéo</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href=".\veilles.html">Veilles <i class=""></i></a>
+          </li>
+
+          <li><a href="certifications.html">Certifications</a></li>
+
+          <li class="dropdown">
+            <a href="#e5">EPREUVE E5 <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="formation.html">En Formation</a></li>
+              <li><a href="E5entreprise.html">En Entreprise</a></li>
+            </ul>
+          </li>
+
+          <li><a href="e6.html">EPREUVE E6</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Header et Footer injectés automatiquement -->
+  <main class="competences-page">
+    <section class="competences-container fade-up">
+      <h1>Mes Compétences</h1>
+      <p>Découvrez ci-dessous l’ensemble de mes compétences professionnelles et techniques présentées dans mon document PDF :</p>
+
+      <div class="pdf-card">
+        <div class="pdf-frame">
+          <iframe src="pdf/competences.pdf" title="Compétences" frameborder="0"></iframe>
+        </div>
+        <a href="pdf/competences.pdf" target="_blank" class="pdf-btn">
+          <i class="fas fa-download"></i> Télécharger le PDF
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+  <style>
+    /* ===== PAGE COMPÉTENCES ===== */
+.competences-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, rgba(106,90,205,0.2), rgba(0,0,0,0.8));
+  padding: 8rem 1rem 5rem;
+}
+
+.competences-container {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.competences-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.competences-container p {
+  color: #ccc;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.pdf-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pdf-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(106,90,205,0.5);
+}
+
+.pdf-frame {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.pdf-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+.pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+  padding: 0.9rem 1.5rem;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(106,90,205,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pdf-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(106,90,205,0.6);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .pdf-frame {
+    height: 70vh;
+  }
+}
+
+  </style>
+
+</body>
+</html>
